@@ -1,0 +1,356 @@
+/* Set background image for the whole interface */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/rainglass.gif');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.logo-img {
+    height: 60px; /* Adjust the height to your desired size */
+    width: auto; /* Keeps the aspect ratio */
+
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-img {
+    height: 24px;
+    width: 24px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.8);
+    padding: 10px 0;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+    width: 100%;
+}
+
+/* Tab Item Hover Animation */
+.tab-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.tab-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.tab-item span {
+    display: block;
+}
+.tab-icon {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 0 auto 5px;
+}
+
+/* Content Section */
+.content {
+    padding: 15px;
+}
+
+/* Adjust Card Header Text for Visibility */
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Adjust Rescue Card */
+.rescue-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Center header text inside card */
+.rescue-card .card-header {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Icon Styling */
+.header-icon {
+    height: 32px;
+    width: 32px;
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    opacity: 0;
+    transform: translateY(50px);
+    visibility: hidden;
+    transition: opacity 1s ease, transform 1s ease;
+    color: #fff;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.btn-yellow {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Hotline Link */
+.hotline {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+/* Scrollable Container */
+.scrollable-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    margin-top: 10px;
+}
+
+/* Full-height Section */
+.content-container {
+    scroll-snap-align: start;
+    height: calc(100vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Relief, Donation, and Evacuate Cards */
+.relief-card,
+.donation-card,
+.evacuate-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+/* Evacuate Section Animation */
+.evacuate-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    visibility: hidden; /* Ensure it is hidden by default */
+}
+
+.evacuate-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible; /* Make it visible when the class is applied */
+    z-index: 10; /* Ensure it appears on top if needed */
+}
+
+/* Scroll animation for visibility */
+.scrollable-container .evacuate-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.scrollable-container .evacuate-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Ensure the navbar stays on top of the content */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Increase z-index to make sure it's always on top */
+}
+
+/* Tabs stay just below the navbar */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.8);
+    padding: 10px 0;
+    position: sticky;
+    top: 60px; /* Adjust position so tabs don't overlap with navbar */
+    z-index: 90; /* Tabs are below the navbar */
+    width: 100%;
+}
+
+/* Adjust the scrollable container to start below the tabs */
+.scrollable-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 120px; /* Give enough space below the tabs */
+    scroll-snap-type: y mandatory;
+    height: calc(100vh - 120px); /* Ensure it fits the viewport below tabs */
+}
+
+/* Each card should take up the full viewport height */
+.content-container {
+    scroll-snap-align: start;
+    height: 100vh; /* Make each card take up the full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Make the card visible when it's in the viewport */
+.content-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Adjust card styles to make sure they don't overlap the navbar or tabs */
+.card {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Style buttons */
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.btn-yellow {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+/* Card content header styling */
+.card-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+/* Card becomes visible after scroll */
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}

@@ -1,0 +1,94 @@
+.donut-chart-wrapper {
+    padding-left: 65%;
+    margin-bottom: 30%; /* Reduced margin-bottom to move it up */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    width: 30%;
+    gap: 0px;
+    margin-top: -350px; /* Reduced margin-top to move it up */
+}
+
+.donut-chart-container {
+    position: relative;
+    width: 80%;
+    text-align: center;
+}
+
+#ageDistributionChart {
+    width: 110%;
+    height: 500px;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    padding-top: 0; /* Ensure no padding pushes it down */
+}
+
+/* Flexbox for vertical alignment */
+.scoreboard-container-donut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Added gap between filter and scoreboards */
+    margin-top: 10px; /* Reduced margin-top for tighter spacing */
+    width: 50%;
+}
+
+.scoreboard-item-male-donut,
+.scoreboard-item-female-donut {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin-bottom: 10px; /* Adjust spacing between items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Color for male donut */
+.male-donut {
+    background-color: #36A2EB;
+}
+
+/* Color for female donut */
+.female-donut {
+    background-color: #FF6384;
+}
+
+/* Aligning text inside scoreboard containers */
+.scoreboard-item-male-donut .value,
+.scoreboard-item-female-donut .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+/* Styling for the dropdown */
+select {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Dropdown styling */
+.dropdown-wrapper {
+    width: 100%; /* Make sure the dropdown takes full width */
+    display: flex;
+    justify-content: center;
+}
+
+/* Center the heading text inside the containers */
+.scoreboard-item-male-donut h2,
+.scoreboard-item-female-donut h2 {
+    margin: 0;
+    font-size: 1.2rem; /* Adjust size if needed */
+    color: #fff; /* White for better contrast */
+}

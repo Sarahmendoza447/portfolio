@@ -1,0 +1,143 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 1rem 0;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f90;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #f90;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background: #e87f0c;
+}
+
+/* Sections */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}

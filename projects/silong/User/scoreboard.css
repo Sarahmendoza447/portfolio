@@ -1,0 +1,51 @@
+/* Style for the scoreboard container */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    height: 160px;
+
+}
+
+/* Style for each scoreboard item */
+.scoreboard-item {
+    background-color: transparent; /* Set the background to transparent */
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    border: 2px solid #ddd; /* Add border around each scoreboard */
+    position: relative; /* For the left colored line */
+}
+
+/* Left colored line on each scoreboard */
+.scoreboard-item::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px; /* Thin line */
+    background-color: #3498db; /* Blue color for the line (can be changed) */
+}
+
+/* Title for the scoreboard item */
+.scoreboard-item h2 {
+    font-size: 2rem;
+    margin: 20 0 20px 0; /* Add margin-bottom to create space below the title */
+    color: #333;
+}
+
+/* Description text inside the scoreboard */
+.scoreboard-item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Value text styling */
+.scoreboard-item .value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-top: -20px; /* Add margin-top to create space above the value */
+}

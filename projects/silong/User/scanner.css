@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    background-image: url('images/rainglass.gif');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Adaptive width for smaller screens */
+    max-width: 500px; /* Constrain width for larger screens */
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* QR Scanner */
+#qrScanner {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: none;
+    margin-top: 20px;
+}
+
+/* Start and Stop Buttons */
+#startScannerBtn, #stopScannerBtn {
+    width: 100%; /* Full width for responsiveness */
+    font-size: 1rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+#startScannerBtn {
+    background-color: #1FA700;
+    color: #fff;
+}
+
+#startScannerBtn:hover {
+    background-color: #218838;
+}
+
+#stopScannerBtn {
+    background-color: #D72323;
+    color: #fff;
+}
+
+#stopScannerBtn:hover {
+    background-color: #c82333;
+}
+
+/* Scan Result */
+#scanResult {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Hidden Input */
+input[type="hidden"] {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #qrScanner {
+        max-width: 100%;
+    }
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #startScannerBtn, #stopScannerBtn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #scanResult {
+        font-size: 1rem;
+    }
+}

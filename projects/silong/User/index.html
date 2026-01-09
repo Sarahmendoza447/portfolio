@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILONG Mobile Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .modal-header.red-header {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .modal-content.red-border {
+            border: 2px solid #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Landing_Page_Images/silong.png" alt="SILONG Logo" class="logo-img">
+        </div>
+        <div class="nav-icons">
+            <a href="#" class="nav-item"><img src="images/notification-icon.png" alt="Notification" class="icon-img"></a>
+            <a href="#" class="nav-item"><img src="images/user-icon.png" alt="User" class="icon-img"></a>
+        </div>
+    </div>
+
+   <!-- Tabs -->
+<div class="tabs">
+    <div class="tab-item active" data-target="rescue">
+        <img src="images/rescue-icon.png" alt="Rescue Icon" class="tab-icon">
+        <span>Rescue</span>
+    </div>
+    <div class="tab-item" data-target="evacuate">
+        <img src="images/evacuate-icon.png" alt="Evacuate Icon" class="tab-icon">
+        <span>Evacuate</span>
+    </div>
+    <div class="tab-item" data-target="relief">
+        <img src="images/relief-icon.png" alt="Relief Goods Icon" class="tab-icon">
+        <span>Relief Goods</span>
+    </div>
+    <div class="tab-item" data-target="donation">
+        <img src="images/donation-icon.png" alt="Donation Icon" class="tab-icon">
+        <span>Donation</span>
+    </div>
+</div>
+
+<!-- Scrollable Container -->
+<div class="scrollable-container">
+    <!-- First Container: Rescue -->
+    <div class="content-container" id="rescue">
+        <div class="rescue-card card">
+            <div class="card-header">
+                <img src="images/rescue-icon.png" alt="Rescue Icon" class="header-icon">
+                <span>RESCUE</span>
+            </div>
+            <button class="btn btn-red">SEND RESCUE</button>
+            <p>Emergency Hotline</p>
+            <a href="tel:+639175089911" class="hotline">+63 917 508 9911</a>
+        </div>
+    </div>
+
+    <!-- Second Container: Evacuate -->
+    <div class="content-container" id="evacuate">
+        <div class="evacuate-card card">
+            <div class="card-header">
+                <img src="images/evacuate-icon.png" alt="Evacuate Icon" class="header-icon">
+                <span>EVACUATE</span>
+            </div>
+            <button class="btn btn-red">EVACUATE NOW!</button>
+            <button class="btn btn-yellow">View Evacuation Area</button>
+        </div>
+    </div>
+
+    <!-- Third Container: Relief Goods -->
+    <div class="content-container" id="relief">
+        <div class="relief-card card">
+            <div class="card-header">
+                <img src="images/relief-icon.png" alt="Relief Icon" class="header-icon">
+                <span>RELIEF GOODS</span>
+            </div>
+            <button class="btn btn-yellow">TRACKER</button>
+            <button class="btn btn-red">SURVEY</button>
+        </div>
+    </div>
+
+    <!-- Fourth Container: Donation -->
+    <div class="content-container" id="donation">
+        <div class="donation-card card">
+            <div class="card-header">
+                <img src="images/donation-icon.png" alt="Donation Icon" class="header-icon">
+                <span>DONATION</span>
+            </div>
+            <button class="btn btn-yellow">SEND DONATION</button>
+            <button class="btn btn-red">TRACK DONATION</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

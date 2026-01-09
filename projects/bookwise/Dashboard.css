@@ -1,0 +1,298 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sidebar .logo {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .logo img {
+    width: 60%;
+    height: auto;
+    margin-top: -15px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+
+.sidebar nav ul li a img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.sidebar nav ul li a:hover img {
+    transform: scale(1.2);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 80px;
+    padding: 20px;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 80px;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.time-date {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1130px;
+    margin-right: 15px;
+}
+
+.setting {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 12px;
+    color: #777;
+}
+
+.time {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Dashboard Panels */
+.dashboard {
+    padding: 60px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.panel-container {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    width: 100%;
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 350px;
+    height: 100px;
+    border: 2px solid #000;
+
+}
+.panel:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.panel img {
+    width: 20%;
+    height: 70%;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.divider {
+    width: 2px;
+    height: 80%;
+    background-color: #000; /* Divider color */
+    margin: 0 15px; /* Space around the divider */
+}
+
+.panel-text {
+    font-size: 24px;
+    font-family: Montserrat;
+    margin-left: 15px;
+    font-weight: bold;
+    color: #151619;
+
+}
+
+/* Centered Logo */
+.center-logo {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.center-logo img {
+    width: 200px;
+}
+
+/* Quote Panel */
+.quote-panel {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    font-style: italic;
+
+
+    margin-top: 30px;
+    height: 200px;
+}
+.quote-text {
+    font-size: 20px;
+    font-family: Montserrat, "Bold";
+    color: #333;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+.letter{
+    margin-left: 500px;
+}
+
+.panel-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and panels */
+    width: 100%;
+    margin-top: 10px;
+}
+.row2{
+    margin-top: 50px;
+    height: 100px;
+    width: 500px;
+
+}
+.row2 img{
+    width: 20%;
+    height: 90%;
+    margin-right: 10px;
+}
+.chart{
+    margin-right: -900px;
+    width: 20%;
+    margin-top: -450px;
+
+}
+.legend-panel {
+    display: flex;
+    flex-direction: column;  /* Stack the legend items vertically */
+    align-items: center;
+    gap: 10px;  /* Space between items */
+    margin-top: 10px;
+}
+
+.legend-panel div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 8px;
+}
+.legend-panel img{
+    width: 40%;
+    height: 100%;
+    margin-right: -10px;
+    margin-left: 5px;
+    margin-top: 5%;
+}

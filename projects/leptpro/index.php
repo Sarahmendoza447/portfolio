@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BatState-U LEPT Review System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="logo" href="#">
+            <img src="assets/images/logo_white2.png" alt="LEPTPRO Logo" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#key-features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="auth-buttons">
+                <!-- Remove leading slash and 'PHP/letpro/' from paths -->
+                <a href="Student/login_module/Student_Login.php" class="btn btn-outline-light btn-auth-same me-2">Login</a>
+                <a href="Student/signup_module/signup.php" class="btn btn-primary btn-auth-same">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Welcome to LEPTPRO</h1>
+            <p class="lead">Your Comprehensive LEPT Review Partner</p>
+            <p class="mb-4">Prepare for the Licensure Examination for Professional Teachers (LEPT) with our advanced learning platform designed specifically for education students at Batangas State University, The National Engineering University ARASOF - Nasugbu and beyond.</p>
+
+            <div class="hero-features">
+                <div class="hero-feature-item">
+                    <i class="bi bi-graph-up"></i>
+                    <span>Smart Analytics</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="bi bi-journal-check"></i>
+                    <span>Practice Tests</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="bi bi-mortarboard"></i>
+                    <span>Expert Content</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="features">
+    <div class="container">
+        <h2 class="text-center mb-5">Who Can Use This Platform?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100">
+                    <img src="assets/images//BSED.png" class="platform-users-img" alt="Secondary Education">
+                    <div class="card-body text-center">
+                        <h4>BS Secondary Education</h4>
+                        <p>Specialized review materials and assessments for secondary education majors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100">
+                    <img src="assets/images/BEED.png" class="platform-users-img" alt="Elementary Education">
+                    <div class="card-body text-center">
+                        <h4>BS Elementary Education</h4>
+                        <p>Tailored content for elementary education students preparing for LEPT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card feature-card h-100">
+                    <img src="assets/images/other.png" class="platform-users-img" alt="Other Education">
+                    <div class="card-body text-center">
+                        <h4>Other Education Programs</h4>
+                        <p>Comprehensive resources for all education-related courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="key-features-section" id="key-features">
+    <div class="container">
+        <h2 class="text-center mb-5">Key Features</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="text-center key-feature-wrapper">
+                    <i class="bi bi-graph-up-arrow key-feature-icon"></i>
+                    <h5>Prescriptive Analytics</h5>
+                    <p>Get personalized learning recommendations</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center key-feature-wrapper">
+                    <i class="bi bi-journal-check key-feature-icon"></i>
+                    <h5>Practice Tests</h5>
+                    <p>Access comprehensive mock exams</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center key-feature-wrapper">
+                    <i class="bi bi-bar-chart-line key-feature-icon"></i>
+                    <h5>Progress Tracking</h5>
+                    <p>Monitor your improvement over time</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="text-center key-feature-wrapper">
+                    <i class="bi bi-book key-feature-icon"></i>
+                    <h5>Study Materials</h5>
+                    <p>Access curated learning resources</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="review-component" id="about">
+    <div class="container">
+        <h2 class="text-center mb-5">Review Components</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="component-card">
+                    <i class="bi bi-mortarboard component-icon"></i>
+                    <h4>General Education</h4>
+                    <p>Master fundamental concepts across various disciplines</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="component-card">
+                    <i class="bi bi-person-workspace component-icon"></i>
+                    <h4>Professional Education</h4>
+                    <p>Learn essential teaching methodologies and principles</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="component-card">
+                    <i class="bi bi-bookmark-star component-icon"></i>
+                    <h4>Major/Specialization</h4>
+                    <p>Deep dive into your specific teaching field              </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add About Us Section -->
+<section class="py-5 bg-light" id="about-us">
+    <div class="container">
+        <h2 class="text-center mb-5">About LEPTPRO</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="assets/images/letpro2.png" alt="LEPTPRO Logo" class="img-fluid mb-4" style="max-width: 250px;">
+                <h4 class="mb-3" style="color: var(--maroon-color);">Empowering Future Educators</h4>
+                <p class="mb-4">LEPTPRO is a comprehensive LEPT review system designed specifically for Batangas State University, TNEU ARASOF education students. Our platform combines advanced technology with expert educational content to provide a reliable preparation experience for the Licensure Examination for Professional  Teachers.</p>
+                <p>Developed by the College of Informatics and Computing Sciences in collaboration with expert faculty members, LEPTPRO offers specialized content tailored to different education majors, ensuring relevant and focused review materials for all users.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4" style="color: var(--primary-color);">Our Mission</h4>
+                        <p class="card-text">To provide accessible, high-quality review materials and assessment tools that prepare education students to excel in their Licensure Examination for Teachers and become exceptional educators.</p>
+                        
+                        <h5 class="mt-4 mb-3" style="color: var(--maroon-color);">Why Choose LEPTPRO?</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--maroon-color);"></i> Curriculum-aligned content developed by expert educators</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--maroon-color);"></i> Personalized learning paths based on performance analytics</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--maroon-color);"></i> Comprehensive coverage of all LEPT components</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill me-2" style="color: var(--maroon-color);"></i> Regular updates to match evolving examination patterns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Decorative Divider -->
+<div style="height: 3px; background: linear-gradient(90deg, transparent 0%, #800000 20%, #c41e3a 50%, #800000 80%, transparent 100%); box-shadow: 0 2px 10px rgba(128, 0, 0, 0.2);"></div>
+
+<!-- Mobile Application Section -->
+<section class="py-5 bg-light" id="mobile-app" style="position: relative; overflow: hidden; border-top: 1px solid rgba(128, 0, 0, 0.1);">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, transparent 70%); border-radius: 50%;"></div>
+    <div style="position: absolute; bottom: -80px; left: -80px; width: 250px; height: 250px; background: radial-gradient(circle, rgba(30, 58, 95, 0.08) 0%, transparent 70%); border-radius: 50%;"></div>
+    <div style="position: absolute; top: 50%; right: 10%; width: 150px; height: 150px; background: rgba(128, 0, 0, 0.06); border-radius: 20px; transform: rotate(45deg);"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold" style="color: #1e3a5f; font-size: 2.2rem;">Download Mobile App</h2>
+            <div style="width: 80px; height: 4px; background: linear-gradient(90deg, #800000, #c41e3a); margin: 12px auto; border-radius: 2px; box-shadow: 0 2px 10px rgba(128, 0, 0, 0.3);"></div>
+            
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-11">
+                <div class="card border-0" style="border-radius: 20px; background: rgba(255, 255, 255, 0.98); box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4); overflow: hidden; backdrop-filter: blur(10px);">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row align-items-center g-4">
+                            <!-- Left Column - Text -->
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div style="background: linear-gradient(135deg, #800000, #c41e3a); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px; box-shadow: 0 4px 15px rgba(128, 0, 0, 0.3);">
+                                        <i class="bi bi-star-fill" style="font-size: 1.5rem; color: #ffffff;"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="fw-bold mb-2" style="color: #1e3a5f;">LEPTPRO Mobile App</h4>
+                                        <p class="mb-0" style="color: #666; font-size: 0.9rem;">Your comprehensive LEPT review companion</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="features-list mt-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div style="background: linear-gradient(135deg, #800000, #a52a2a); width: 35px; height: 35px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
+                                            <i class="bi bi-check-lg" style="color: white; font-size: 1.2rem; font-weight: bold;"></i>
+                                        </div>
+                                        <span style="color: #555; font-size: 0.95rem;">Access study materials anywhere, anytime</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div style="background: linear-gradient(135deg, #800000, #a52a2a); width: 35px; height: 35px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
+                                            <i class="bi bi-check-lg" style="color: white; font-size: 1.2rem; font-weight: bold;"></i>
+                                        </div>
+                                        <span style="color: #555; font-size: 0.95rem;">Practice tests and mock exams on-the-go</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div style="background: linear-gradient(135deg, #800000, #a52a2a); width: 35px; height: 35px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
+                                            <i class="bi bi-check-lg" style="color: white; font-size: 1.2rem; font-weight: bold;"></i>
+                                        </div>
+                                        <span style="color: #555; font-size: 0.95rem;">Track your progress in real-time</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Column - Icon & Button -->
+                            <div class="col-md-6 text-center">
+                                <div class="mb-4" style="background: linear-gradient(135deg, #800000 0%, #c41e3a 50%, #800000 100%); width: 120px; height: 120px; border-radius: 25px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 10px 30px rgba(128, 0, 0, 0.4); position: relative;">
+                                    <div style="position: absolute; inset: -8px; background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent); border-radius: 28px; z-index: 0;"></div>
+                                    <i class="bi bi-phone-fill" style="font-size: 3.5rem; color: #ffffff; position: relative; z-index: 1;"></i>
+                                </div>
+                                
+                                <a href="letpro/public_docs/LEPTPRO.apk" class="btn btn-lg mb-3" style="background: linear-gradient(135deg, #800000, #c41e3a); color: white; border: none; border-radius: 12px; padding: 14px 40px; font-weight: 700; font-size: 1.05rem; box-shadow: 0 6px 20px rgba(128, 0, 0, 0.4); transition: all 0.3s ease; position: relative; overflow: hidden;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(128, 0, 0, 0.5)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(128, 0, 0, 0.4)';" download>
+                                    <i class="bi bi-download me-2" style="font-size: 1.2rem;"></i>
+                                    Download APK
+                                </a>
+                                
+                                <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 12px 20px; border-radius: 12px; display: inline-block; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                                    <i class="bi bi-shield-check-fill me-2" style="color: #28a745; font-size: 1.1rem;"></i>
+                                    <span style="color: #555; font-size: 0.85rem; font-weight: 600;">Android 8.0+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add Contact Section -->
+<section class="py-5 contact-section" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-5 mb-4 mb-md-0 contact-info">
+                <h4 class="mb-4">Get In Touch</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        <strong>Address:</strong><br>
+                       R. Martinez St., Brgy. Bucana, Nasugbu, <br>
+                        Batangas, Philippines 4231
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        <strong>Email:</strong><br>
+                        LEPTPRO@example.com
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        <strong>Phone:</strong><br>
+                        (043) 123-4567
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-clock-fill me-2"></i>
+                        <strong>Operating Hours:</strong><br>
+                        Monday-Friday: 8:00 AM - 5:00 PM
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5 contact-form">
+                <h4 class="mb-4">Send a Message</h4>
+                <form id="contactForm" action="contact_module/process_contact.php" method="POST">
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <p>© 2026 Batangas State University - TNEU ARASOF CAMPUS. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+</body>
+</html>
